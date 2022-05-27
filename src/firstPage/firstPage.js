@@ -24,7 +24,7 @@ class FirstPage extends React.Component {
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet hendrerit nisl non vehicula. Nam cursus aliquet tristique. Nullam euismod suscipit lacus, in eleifend tellus luctus vel. </p>
           <Link to="/mainPage">
-            <a class="text-indigo-500 inline-flex items-center">Go onwards
+            <a class="text-indigo-500 inline-flex items-center" href="#ye">Go onwards
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -40,14 +40,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet hendrerit
 }
 
 
-function Jumbotron({ children, className }) {
-    return (
-        <div
-            className={`${className} shadow-lg border font-light border-solid rounded-sm py-12 px-8 mb-8`}
-        >
-            {children}
-        </div>
-    );
-}
 
 export default FirstPage;
