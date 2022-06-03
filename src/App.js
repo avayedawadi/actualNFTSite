@@ -9,11 +9,12 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Footer from './footer/footer';
 
 function App() {
   return (
     <>
-        <BrowserRouter>
+        <BrowserRouter /*basename={process.env.PUBLIC_URL}*/>
           <Routes>
             <Route path="/gallery" exact element = {<Gallery/>}></Route>
             <Route path="/provenance" exact element = {<Provenance/>}></Route>
@@ -21,6 +22,7 @@ function App() {
             <Route path = "/"  exact element={<FirstPage/>}></Route>
           </Routes>
         </BrowserRouter>
+        <Footer></Footer>
     </>
   );
 }

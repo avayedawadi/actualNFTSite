@@ -1,0 +1,55 @@
+:root{
+  --sideColor: #c874b2;
+}
+
+.button {
+    border: 1px transparent;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;  
+    -webkit-animation: glowing 1300ms infinite;
+    -moz-animation: glowing 1300ms infinite;
+    -o-animation: glowing 1300ms infinite;
+    animation: glowing 1300ms infinite;
+  }
+  @-webkit-keyframes glowing {
+    0% {
+      background-color: var(--sideColor);
+      -webkit-box-shadow: 0 0 3px var(--sideColor);
+    }
+    50% {
+      background-color: var(--sideColor);
+      -webkit-box-shadow: 0 0 15px var(--sideColor);
+    }
+    100% {
+      background-color: var(--sideColor);
+      -webkit-box-shadow: 0 0 3px var(--sideColor);
+    }
+  }
+  @keyframes glowing {
+    0% {
+      background-color: var(--sideColor);
+      box-shadow: 0 0 3px var(--sideColor);
+    }
+    50% {
+      background-color: var(--sideColor);
+      box-shadow: 0 0 15px var(--sideColor);
+    }
+    100% {
+      background-color: var(--sideColor);
+      box-shadow: 0 0 3px var(--sideColor);
+    }
+  }
+
+.landingGif{
+    height: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}

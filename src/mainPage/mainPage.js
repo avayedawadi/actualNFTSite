@@ -7,7 +7,7 @@ class MainPage extends React.Component {
       return (
         <div>
           <Navbar></Navbar>
-          <img className="image1" src="https://ik.imagekit.io/bayc/assets/bayc-mutant-hero.jpg" alt="nftImage"></img>
+          <img className="image1" src="https://media.discordapp.net/attachments/980150909487173652/980151789473107989/Retro_PSD.psd.png?width=2050&height=683" alt="nftImage"></img>
           <MainPageInfo></MainPageInfo>        
         </div>
       );

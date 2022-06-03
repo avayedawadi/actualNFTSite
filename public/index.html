@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .bodyTag{
+        background-color:black;
+        background-image:
+        radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 0px),
+        radial-gradient(white, rgba(255,255,255,.15) 0.5px, transparent 0px),
+        radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 0px),
+        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 1px, transparent 0px);
+        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+      }
+    </style>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,7 +38,7 @@
     -->
     <title>React App</title>
   </head>
-  <body bgcolor="black">
+  <body class="bodyTag">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
