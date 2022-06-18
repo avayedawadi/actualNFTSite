@@ -1,11 +1,11 @@
 import React from 'react';
 import './gallery.css';
-import Navbar from '../navbar/navbar';
+import NavAlt from '../navbarAlt/navbarAlt';
 class Gallery extends React.Component {
     render() {
       return (
         <>
-        <Navbar></Navbar>
+        <NavAlt></NavAlt>
         <div>  
             <h1 className="text-white">Gallery</h1> 
         </div>

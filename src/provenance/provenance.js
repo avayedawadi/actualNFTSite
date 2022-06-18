@@ -1,11 +1,11 @@
 import React from 'react';
 import './provenance.css'
-import Navbar from '../navbar/navbar';
+import NavAlt from '../navbarAlt/navbarAlt';
 class Provenance extends React.Component {
   render() {
     return (
       <>
-        <Navbar></Navbar>
+        <NavAlt></NavAlt>
         <div>
           <h1 className="text-white text-4xl text-center">Provenance Record</h1>
           <table>

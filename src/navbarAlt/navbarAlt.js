@@ -3,12 +3,11 @@ import { Transition } from "@headlessui/react";
 import {
   Link
 } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 
-function Nav() {
+function NavAlt() {
   const [isOpen, setIsOpen] = useState(false);
     function displayImage(){
-        const imgArr = ["https://media.discordapp.net/attachments/980150909487173652/985953879147569152/1.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953879374041088/2.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953879621533706/3.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953879965462628/4.png?width=660&height=660","https://cdn.discordapp.com/attachments/980150909487173652/985953880288411748/5.png","https://cdn.discordapp.com/attachments/980150909487173652/985953880556830720/6.png","https://media.discordapp.net/attachments/980150909487173652/985953880795914372/7.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953881005649950/8.png?width=660&height=660"]
+      const imgArr = ["https://media.discordapp.net/attachments/980150909487173652/985953879147569152/1.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953879374041088/2.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953879621533706/3.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953879965462628/4.png?width=660&height=660","https://cdn.discordapp.com/attachments/980150909487173652/985953880288411748/5.png","https://cdn.discordapp.com/attachments/980150909487173652/985953880556830720/6.png","https://media.discordapp.net/attachments/980150909487173652/985953880795914372/7.png?width=660&height=660","https://media.discordapp.net/attachments/980150909487173652/985953881005649950/8.png?width=660&height=660"]
         var num = Math.floor(Math.random() * (imgArr.length));
         return imgArr[num];
     }
@@ -32,32 +31,32 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                <ScrollLink to="buy" smooth={true} offset={-20} duration={500}>
+                <Link to="/mainPage">
                     <a
                       href="#"
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       Buy
                     </a>
-                    </ScrollLink>
+                    </Link>
 
-                  <ScrollLink to="roadmap" smooth={true} offset={-30} duration={500}>
+                    <Link to="/mainPage">
                   <a
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Roadmap
                   </a>
-                  </ScrollLink>
+                  </Link>
 
-                  <ScrollLink to="team" smooth={true} offset={-30} duration={500}>
+                  <Link to="/mainPage">
                   <a
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Team
                   </a>
-                  </ScrollLink>
+                </Link>
 
                   <Link to="/gallery">
                   <a
@@ -146,31 +145,31 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <ScrollLink to="buy" smooth={true} offset={-400} duration={500}>
+              <Link to="/mainPage">
                 <a
                   href="#"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Buy
                 </a>
-                </ScrollLink>
-              <ScrollLink to="roadmap" smooth={true} offset={-30} duration={500}>
+                </Link>
+              <Link to="/mainPage">
                 <a
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Roadmap
                 </a>
-              </ScrollLink>
+                </Link>
 
-              <ScrollLink to="team" smooth={true} offset={-30} duration={500}>
+                <Link to="/mainPage">
                 <a
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Projects
                 </a>
-                </ScrollLink>
+                </Link>
                 
                 <Link to="/gallery">
                   <a
@@ -206,4 +205,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavAlt;

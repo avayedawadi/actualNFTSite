@@ -4,6 +4,7 @@ import FirstPage from './firstPage/firstPage'
 import MainPage from './mainPage/mainPage'
 import Provenance from './provenance/provenance';
 import Gallery from './gallery/gallery';
+import FAQ from './FAQ/FAQ'
 import {
   BrowserRouter,
   Routes,
@@ -14,12 +15,13 @@ import Footer from './footer/footer';
 function App() {
   return (
     <>
-        <BrowserRouter /*basename={process.env.PUBLIC_URL}*/>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/gallery" exact element = {<Gallery/>}></Route>
             <Route path="/provenance" exact element = {<Provenance/>}></Route>
             <Route path = "mainPage" exact element = {<MainPage/>}></Route>
             <Route path = "/"  exact element={<FirstPage/>}></Route>
+            <Route path = "/faq" exact element={<FAQ/>}></Route>
           </Routes>
         </BrowserRouter>
         <Footer></Footer>
